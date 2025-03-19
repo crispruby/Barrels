@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: ff565b3afb7aa6745a74dcc5a2ccfc2b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - SmokeyExplosion: {fileID: 2312591318274358134, guid: 77da29788f3010e4396994ea52057980, type: 3}
+  - healthText: {instanceID: 0}
+  - livesText: {instanceID: 0}
+  - redPowerupSound: {fileID: 8300000, guid: 11a7e71782ae6430390d783bc08409df, type: 3}
+  - redPowerupEffect: {fileID: 4184831820040277122, guid: 1bee58de964145a42bfce895cf98666d, type: 3}
+  - greenPowerupSound: {fileID: 8300000, guid: f17bac10ee4c44148a1e9088e7540c55, type: 3}
+  - greenPowerupEffect: {fileID: 4184831820040277122, guid: 1bee58de964145a42bfce895cf98666d, type: 3}
+  - metalBarrelSound: {fileID: 8300000, guid: 3c392e6befcab436bae9c198f4ea422c, type: 3}
+  - metalBarrelEffect: {fileID: 4212237911574779972, guid: f34d53a9f8cd409428b8d1e3addf4807, type: 3}
+  - gasBarrelSound: {fileID: 8300000, guid: 6fede028ba58b48d08e05b2bff883359, type: 3}
+  - gasBarrelEffect: {fileID: 5585671604984661021, guid: c8024b1c8dba5ac45ac354c95aaf3221, type: 3}
+  - rustyBarrelSound: {fileID: 8300000, guid: 13080dc9f84824b65ad233427adf53a8, type: 3}
+  - rustyBarrelEffect: {fileID: 3302442364004722511, guid: 10434d6bf3af98b46a88ab696f543ee3, type: 3}
+  - stripedBarrelSound: {fileID: 8300000, guid: 1916972b0254443a2ac996968e38335c, type: 3}
+  - stripedBarrelEffect: {fileID: 1855340746554395461, guid: 49011e57640af4346b984abcfb1cf581, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
