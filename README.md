@@ -2,14 +2,14 @@
 
 Rolling Barrels is a 3D Unity game built with C# where the player controls a mechanic girl running through a warehouse. The objective is to avoid rolling barrels, collect flying first aid jars, and survive as long as possible.
 
-## Gameplay
+## Gameplay 🚀
 
 - Control a mechanic girl avatar.
 - Avoid rolling barrels that roll down the long warehouse.
 - Collect first aid jars to restore health and earn points.
 - Survive until the game ends and track points and health.
 
-## Features
+## Features ✨
 
 - 3D warehouse environment with moving floor and walls.
 - Barrel obstacles with different barrel types and effects.
@@ -17,13 +17,13 @@ Rolling Barrels is a 3D Unity game built with C# where the player controls a mec
 - Score tracking and gradual spawn difficulty.
 - Sound effects and visual particle feedback.
 
-## Controls
+## Controls 🎮
 
 - `Up Arrow`: Run / accelerate environment movement.
 - `Left Arrow`: Move left.
 - `Right Arrow`: Move right.
 
-## Web Builds
+## Web Builds 🌐
 
 Play the game in your browser using the following links:
 
@@ -40,11 +40,11 @@ Play the game in your browser using the following links:
 - `Assets/Scripts/GameConstants.cs` — Centralized configuration values for easier tuning.
 - `Assets/Scripts/FallingObject.cs` — Shared movement behavior for falling objects.
 
-## Notes
+## Notes 📘
 
 This project is a Unity game prototype built for learning and experimentation with C# scripting and basic game mechanics.
 
-## Author
+## Author 👤
 
 Daniel Anthony Rozek
 
@@ -52,6 +52,6 @@ Daniel Anthony Rozek
 - LinkedIn: https://www.linkedin.com/in/danielrozek/
 - GitHub: https://github.com/crispruby
 
-## License
+## License 📄
 
 This project is open-source and available for educational and portfolio purposes.
