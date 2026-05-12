@@ -7,7 +7,7 @@ Rolling Barrels is a 3D Unity game built with C# where the player controls a mec
 - Control a mechanic girl avatar.
 - Avoid rolling barrels that roll down the long warehouse.
 - Collect first aid jars to restore health and earn points.
-- Survive until the game ends and track points and health.
+- Survive until the game ends and track points and health and lives.
 
 ## Features ✨
 
