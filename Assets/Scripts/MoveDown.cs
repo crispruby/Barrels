@@ -22,6 +22,68 @@ public class MoveDown : MonoBehaviour
       Debug.LogError("GameManager not found! Please ensure it exists in the scene.");
     }
   }
+using UnityEngine;
+
+public class MoveDown : FallingObject
+{
+    public float speedMultiplier = 1.0f;
+    private GameManager gameManager;
+
+    protected override void Start()
+    {
+        base.Start();
+        gameManager = FindObjectOfType<GameManager>();
+
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found! Please ensure it exists in the scene.");
+        }
+    }
+
+    protected override void Update()
+    {
+        if (!gameManager?.isGameActive ?? false)
+        {
+            objectRb.velocity = Vector3.zero;
+            return;
+        }
+
+        objectRb.velocity = new Vector3(0, 0, -speed * speedMultiplier);
+
+        if (transform.position.z < destroyZ)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        objectRb.AddForce(Vector3.down * GameConfig.GravityForce);
+        StabilizeVelocity();
+        RotateBarrel();
+    }
+
+    private void StabilizeVelocity()
+    {
+        Vector3 currentVelocity = objectRb.velocity;
+        currentVelocity.x = 0;
+        objectRb.velocity = currentVelocity;
+    }
+
+    private void RotateBarrel()
+    {
+        float rotationAmount = (speed / 4f) * speedMultiplier * Time.fixedDeltaTime * GameConfig.BarrelRotationFactor;
+        transform.Rotate(Vector3.up, rotationAmount);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(TagNames.Player))
+        {
+            Destroy(gameObject);
+        }
+    }
+}
 
   void Update()
   {
