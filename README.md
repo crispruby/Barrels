@@ -40,12 +40,6 @@ Play the game in your browser using the following links:
 - `Assets/Scripts/GameConstants.cs` — Centralized configuration values for easier tuning.
 - `Assets/Scripts/FallingObject.cs` — Shared movement behavior for falling objects.
 
-## How to Run
-
-1. Open the project in Unity.
-2. Open the `Rolling Barrels` scene.
-3. Press Play.
-
 ## Notes
 
 This project is a Unity game prototype built for learning and experimentation with C# scripting and basic game mechanics.
