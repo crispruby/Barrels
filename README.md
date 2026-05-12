@@ -27,8 +27,8 @@ Rolling Barrels is a 3D Unity game built with C# where the player controls a mec
 
 Play the game in your browser using the following links:
 
-- Itch.io: https://captain-garneto.itch.io/sparkling-oil
-- Unity Play: https://play.unity.com/en/games/5b1182ad-d41e-494e-baf7-b04c77d0e10e/rolling-barrels-of-sparkling-oil
+- [**Itch Games**](https://captain-garneto.itch.io/sparkling-oil)
+- [**Unity Play**](https://play.unity.com/en/games/5b1182ad-d41e-494e-baf7-b04c77d0e10e/rolling-barrels-of-sparkling-oil)
 
 ## Project Structure
 
@@ -48,9 +48,9 @@ This project is a Unity game prototype built for learning and experimentation wi
 
 Daniel Anthony Rozek
 
-- Portfolio: https://crispruby.github.io/
-- LinkedIn: https://www.linkedin.com/in/danielrozek/
-- GitHub: https://github.com/crispruby
+[**Portfolio**](https://crispruby.github.io/), 
+[**LinkedIn**](https://www.linkedin.com/in/danielrozek/), 
+[**GitHub**](https://github.com/crispruby)
 
 ## License 📄
 
