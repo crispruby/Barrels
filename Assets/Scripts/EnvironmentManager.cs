@@ -1,62 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnvironmentManager : MonoBehaviour
 {
-  public GameObject[] walls;
-  public GameObject[] floorTiles;
-  public GameObject[] objects; // Array for decorative objects
-  public float moveSpeed = 1.5f;
-  public float resetPositionZ = 15f; // Position to reset the tiles and objects
-  public float thresholdZ = -9f; // Threshold position for resetting
-  public float wallThresholdZ = -15f;
-  void Update()
-  {
-    if (Input.GetKey(KeyCode.UpArrow))
-    {
-      MoveElements();
-    }
-  }
-  void MoveElements()
-  {
-    MoveWalls(walls);
-    MoveArray(floorTiles);
-    MoveArray(objects); // Move decorative objects
-  }
+    public GameObject[] walls;
+    public GameObject[] floorTiles;
+    public GameObject[] objects;
 
-  void MoveArray(GameObject[] elements)
-  {
-    foreach (GameObject element in elements)
+    void Update()
     {
-      MoveElement(element);
+        if (Input.GetKey(InputConfig.MoveForward))
+        {
+            MoveElements();
+        }
     }
-  }
-  void MoveElement(GameObject element)
-  {
-    element.transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
 
-    // Check if the element has reached the threshold position and reset it
-    if (element.transform.position.z <= thresholdZ)
+    private void MoveElements()
     {
-      element.transform.position = new Vector3(element.transform.position.x, element.transform.position.y, resetPositionZ);
+        MoveCollection(walls, GameConfig.EnvironmentWallThresholdZ);
+        MoveCollection(floorTiles, GameConfig.EnvironmentFloorThresholdZ);
+        MoveCollection(objects, GameConfig.EnvironmentFloorThresholdZ);
     }
-  }
-  void MoveWalls(GameObject[] elements)
-  {
-    foreach (GameObject element in elements)
-    {
-      MoveWall(element);
-    }
-  }
-  void MoveWall(GameObject element)
-  {
-    element.transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
 
-    // Check if the element has reached the threshold position and reset it
-    if (element.transform.position.z <= wallThresholdZ)
+    private void MoveCollection(GameObject[] elements, float thresholdZ)
     {
-      element.transform.position = new Vector3(element.transform.position.x, element.transform.position.y, resetPositionZ);
+        foreach (GameObject element in elements)
+        {
+            MoveElement(element, thresholdZ);
+        }
     }
-  }
+
+    private void MoveElement(GameObject element, float thresholdZ)
+    {
+        element.transform.Translate(Vector3.back * GameConfig.EnvironmentMoveSpeed * Time.deltaTime);
+
+        if (element.transform.position.z <= thresholdZ)
+        {
+            element.transform.position = new Vector3(element.transform.position.x, element.transform.position.y, GameConfig.EnvironmentResetPositionZ);
+        }
+    }
 }
