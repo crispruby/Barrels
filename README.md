@@ -58,9 +58,5 @@ This project is open-source and available for educational and portfolio purposes
 
 ## Screenshot Gallery 📸
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-
-  <img src="images/RollingBarrels1.png" style="flex: 1 1 45%; max-width: 45%;">
-  <img src="images/RollingBarrels2.png" style="flex: 1 1 45%; max-width: 45%;">
-
-</div>
+<img src="images/RollingBarrels1.png" width="100%">
+<img src="images/RollingBarrels2.png" width="100%">
