@@ -60,7 +60,7 @@ This project is open-source and available for educational and portfolio purposes
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
-  <img src="images/RollingBarrels1.png" style="max-width:48%; flex:1 1 350px;">
-  <img src="images/RollingBarrels2.png" style="max-width:48%; flex:1 1 350px;">
+  <img src="images/RollingBarrels1.png" style="max-width:48%; flex:1 1 400px;">
+  <img src="images/RollingBarrels2.png" style="max-width:48%; flex:1 1 400px;">
 
 </div>
