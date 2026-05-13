@@ -55,3 +55,12 @@ Daniel Anthony Rozek
 ## License 📄
 
 This project is open-source and available for educational and portfolio purposes.
+
+## Screenshot Gallery 📸
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+  <img src="images/RollingBarrels1.png" width="48%">
+  <img src="images/RollingBarrels2.png" width="48%">
+
+</div>
